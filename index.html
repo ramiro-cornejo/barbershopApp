@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,13 +12,10 @@
     <link rel="icon" type="image" href="images/logo_barbershop.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,800;0,900;1,400&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,800;0,900;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/estilos.css">
 </head>
-
-<body class="container">
+<body>
     <header>
         <div class="header__container">
             <div class="header__nav">
@@ -55,35 +51,28 @@
     <main>
         <section id="servicios">
             <div class="container__servicios">
-                <img class="img__servicios" src="images/man-barbershop.jpg" alt="serviciosProd"
-                    title="ServiciosProductos">
-                <div>
-                    <div>
-                        <h2 style="color: aliceblue;">Nuestros servicios</h2>
-                    </div>
-                    <div class="container__servicios-parrafo">
-                        <div class="cards__servicios">
-                            <div class="card__servicios">
-                                <img class="img__servicios-cortes" src="images/servicios/corte-hombre.png"
-                                    alt="Corte de hombre" title="Corte">
-                                <h3>CORTE</h3>
-                                <p class="card__servicios-parrafo">Clásico o moderno. Marcamos tendencia combinando
-                                    máquinas y tijeras.</p>
-                            </div>
-                            <div class="card__servicios">
-                                <img class="img__servicios-cortes" src="images/servicios/recorte-de-barba.png"
-                                    alt="Corte de barba" title="Corte de barba">
-                                <h3>BARBA</h3>
-                                <p class="card__servicios-parrafo">Afeitada tradicional o recorte de barba. Contamos con
-                                    el servicio de toalla caliente.</p>
-                            </div>
-                            <div class="card__servicios">
-                                <img class="img__servicios-cortes" src="images/servicios/corte-niño.png"
-                                    alt="Corte de niño" title="Corte de niño">
-                                <h3>NIÑOS</h3>
-                                <p class="card__servicios-parrafo">El mini CHESTER sabe lo que quiere, por eso atendemos
-                                    sus antojos.</p>
-                            </div>
+                <div class="container__servicios-parrafo">
+                    <div class="cards__servicios">
+                        <div class="card__servicios">
+                            <img class="img__servicios-cortes" src="images/servicios/hombre.png" alt="Corte de hombre"
+                                title="Corte">
+                            <h3>CORTE</h3>
+                            <p class="card__servicios-parrafo">Clásico o moderno. Marcamos tendencia combinando
+                                máquinas y tijeras.</p>
+                        </div>
+                        <div class="card__servicios">
+                            <img class="img__servicios-cortes" src="images/servicios/recorte-de-barba.png"
+                                alt="Corte de barba" title="Corte de barba">
+                            <h3>BARBA</h3>
+                            <p class="card__servicios-parrafo">Afeitada tradicional o recorte de barba. Contamos con
+                                el servicio de toalla caliente.</p>
+                        </div>
+                        <div class="card__servicios">
+                            <img class="img__servicios-cortes" src="images/servicios/contento.png" alt="Corte de niño"
+                                title="Corte de niño">
+                            <h3>NIÑOS</h3>
+                            <p class="card__servicios-parrafo">El mini CHESTER sabe lo que quiere, por eso atendemos
+                                sus antojos.</p>
                         </div>
                     </div>
                 </div>
@@ -188,11 +177,11 @@
                     </div>
                 </div>
                 <div class="cards">
-                    <div class="">
+                    <div class="column-text">
                         <h5>Peluqueros influentes</h5>
                         <time>21/05/2023</time>
                         <p>
-                            “Mi barbería está en mi maleta”, afirmó Harvey, que creció en Atlanta y obtuvo su
+                            "Mi barbería está en mi maleta”, afirmó Harvey, que creció en Atlanta y obtuvo su
                             primer trabajo cuando era adolescente, barriendo recortes de pelo en una tienda a
                             las afueras de la ciudad.
                         </p>
@@ -202,8 +191,8 @@
                     </div>
                 </div>
                 <div class="cards">
-                    <div class="">
-                        <h5>Cuidado de cabello masculino</h5>
+                    <div class="column-text">
+                        <h5>Cuidado de cabello</h5>
                         <time>23/12/2022</time>
                         <p>
                             Sin duda alguna, dentro del cuidado y la estética masculina el cabello juega un
@@ -215,7 +204,6 @@
                     </div>
                 </div>
             </div>
-
         </section>
         <section id="somos">
             <div class="section__somos">
@@ -267,8 +255,8 @@
                             class="form-control">
                     </div>
                     <div class="form-group">
-                        <label id="name-label" for="name">Apellido</label>
-                        <input type="text" name="name" id="name" placeholder="Ingresar apellido" required
+                        <label id="last-name-label" for="lastName">Apellido</label>
+                        <input type="text" name="lastName" id="lastName" placeholder="Ingresar apellido" required
                             class="form-control">
                     </div>
                     <div class="form-group"> <label id="email-label" for="email">Email</label>
@@ -295,7 +283,8 @@
                 <div>
                     <div class="row">
                         <div class="copyright-text">
-                            <p>Copyright &copy; 2023, All Right Reserved <a href="https://github.com/ramiro-cornejo">Rsc</a></p>
+                            <p>Copyright &copy; 2023, Todos los derechos reservados <a
+                                    href="https://github.com/ramiro-cornejo">Rsc</a></p>
                         </div>
                     </div>
                     <div class="row">

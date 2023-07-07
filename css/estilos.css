@@ -20,14 +20,16 @@ html {
 body {
     width: 100%;
     font-size: 2rem;
-    font-family: var(--fuente-prueba);
+    font-family: var(--fuente-principal);
     line-height: 1.5;
 }
 
 img {
     max-width: 100%;
 }
-
+p {
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
+}
 h2 {
     text-align: center;
 }
@@ -99,7 +101,7 @@ ul {
 }
 
 .modelo__nombre {
-    font-size: 5rem;
+    font-size: clamp(10px, 8vw, 50px);
     color: var(--primary);
 }
 
@@ -171,7 +173,7 @@ ul {
     padding: 1rem;
 }
 
-/* PRUEBA DOS CARDS */
+/* CARDS */
 
 .cards {
     display: flex;
@@ -181,9 +183,21 @@ ul {
     padding-bottom: 10rem;
     justify-content: center;
 }
+.cards a {
+    margin-top: 1rem;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    border: 2px solid var(--negro);
+    border-radius: 5rem;
+    color: var(--negro);
+    font-weight: 100;
+    font-size: 1.4rem;
+    transition-property: background-color;
+    transition-duration: .3s;
+}
 
 .card {
-    flex: 0 200px;
+    flex: 0 180px;
     margin: 25px;
     border: 1px solid #ccc;
     border-radius: 2rem;
@@ -202,7 +216,7 @@ ul {
 }
 
 .card .text {
-    padding: 0 20px 20px;
+    padding: 0 20px 50px;
     color: #ccc;
     font-size: 1rem;
 }
@@ -311,10 +325,8 @@ ul {
     text-shadow: 1px 1px 1px rgb(0 0 0 / 40%);
 }
 
-
 form {
     background: #F3F3F4;
-    ;
     padding: 2.5rem;
     border-radius: 0.25rem;
 }
@@ -436,14 +448,17 @@ form {
     }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 420px) {
     .card {
         width: 98%;
         margin: 2%;
     }
-    .section__somos {
-        color: var(--blanco);
-        font-size: 18px;
-        text-align: left;
+    .header__container {
+        display: block;
+        flex-direction: column;
+        align-items: center;
+    }
+    html {
+        width: clamp(769px,8vw,1200px);
     }
 }
